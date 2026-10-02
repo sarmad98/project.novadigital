@@ -6,30 +6,43 @@
   'use strict';
 
   function init() {
-
-    /* ── Navbar scroll state ── */
-    const navbar = document.querySelector('.nd-navbar');
-    if (navbar) {
-      const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 20);
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
-    }
-
-    /* ── Smooth scroll ── */
+    
     document.addEventListener('click', (e) => {
-      const link = e.target.closest('a[href^="#"]');
-      if (!link) return;
-      const id = link.getAttribute('href').slice(1);
-      const target = document.getElementById(id);
-      if (target) {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+
+        const id = link.getAttribute('href').slice(1);
+        const target = document.getElementById(id);
+
+        if (!target) return;
+
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // close mobile nav if open
+
         const collapse = document.querySelector('.nd-navbar .navbar-collapse');
+
         if (collapse && collapse.classList.contains('show') && window.bootstrap) {
-          window.bootstrap.Collapse.getOrCreateInstance(collapse).hide();
+            const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(collapse);
+
+            // Scroll after mobile menu has completely closed
+            collapse.addEventListener(
+            'hidden.bs.collapse',
+            () => {
+                target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+                });
+            },
+            { once: true }
+            );
+
+            bsCollapse.hide();
+        } else {
+            // Desktop
+            target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+            });
         }
-      }
     });
 
     /* ── Calculator (2 sliders + annual billing toggle) ── */

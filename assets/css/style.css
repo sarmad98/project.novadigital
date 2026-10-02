@@ -324,28 +324,12 @@
   white-space: nowrap;
 }
 
-.hero-stat-divider {
-  width: 1px;
-  height: 36px;
-  background: var(--border-color);
-  flex-shrink: 0;
-}
-
 /* Dashboard preview card */
 .hero-dashboard-wrap {
   position: relative;
   margin: 0 auto;
-  max-width: 780px;
   filter: drop-shadow(0 20px 50px rgba(255, 90, 31, 0.18))
           drop-shadow(0 4px 12px rgba(0, 0, 0, 0.55));
-}
-
-.hero-dashboard {
-  background: #0E1420;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-bottom: none;
-  border-radius: 14px 14px 0 0;
-  overflow: hidden;
 }
 
 .dash-chrome {
@@ -522,7 +506,6 @@
   .btn-hero-secondary { width: 100%; max-width: 300px; justify-content: center; }
   .hero-stats { row-gap: 1.25rem; }
   .hero-stat { padding: 0 1.25rem; }
-  .hero-stat-divider { display: none; }
   .hero-dashboard-wrap { max-width: 100%; }
 
   .dash-metrics {

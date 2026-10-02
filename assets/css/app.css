@@ -1,0 +1,334 @@
+﻿/* ── 1. Design Tokens ───────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg-primary:   #0B0F19;
+  --bg-secondary: #101625;
+  --bg-card:      #111827;
+  --bg-card-alt:  #0D1525;
+
+  /* Borders */
+  --border-color:   #202B3D;
+  --border-accent:  #2A3A55;
+
+  /* Typography */
+  --text-primary:   #F8FAFC;
+  --text-secondary: #94A3B8;
+  --text-muted:     #64748B;
+
+  /* Accents */
+  --accent-orange:  #FF5A1F;
+  --accent-yellow:  #FFAA00;
+  --accent-yellow-light: #f5a623;
+  --accent-blue:    #3B82F6;
+  --accent-purple:  #8B5CF6;
+  --accent-green:   #10B981;
+  --accent-brown:   #ff5a1f2e;
+
+  /* Gradients */
+  --gradient-accent:   linear-gradient(135deg, var(--accent-orange), var(--accent-yellow));
+  --gradient-hero:     linear-gradient(180deg, #0B0F19 0%, #101A2E 100%);
+  --gradient-text:     linear-gradient(90deg, var(--accent-orange), var(--accent-yellow));
+
+  /* Glow / Shadow */
+  --glow-orange:    0 0 30px rgba(255, 90, 31, 0.25);
+  --glow-orange-sm: 0 0 12px rgba(255, 90, 31, 0.18);
+  --shadow-card:    0 4px 24px rgba(0, 0, 0, 0.45);
+  --shadow-deep:    0 8px 40px rgba(0, 0, 0, 0.65);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Spacing scale */
+  --section-py: 5rem;
+
+  /* Transitions */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* Typography scale */
+  --font-family:  'Inter', system-ui, -apple-system, sans-serif;
+  --fs-xs:        0.75rem;
+  --fs-sm:        0.875rem;
+  --fs-base:      1rem;
+  --fs-lg:        1.125rem;
+  --fs-xl:        1.25rem;
+  --fs-2xl:       1.5rem;
+  --fs-3xl:       1.875rem;
+  --fs-4xl:       2.25rem;
+  --fs-5xl:       3rem;
+  --fs-6xl:       3.75rem;
+}
+
+/* ── 2. Reset & Base ────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ── 3. Bootstrap Container Customization ───────────────── */
+@media (min-width: 1400px) {
+  .container,
+  .container-xl,
+  .container-xxl {
+    max-width: 1280px;
+  }
+}
+
+/* ── 4. Shared Brand Primitives (Navbar & Footer) ───────── */
+.brand-logo-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--gradient-accent);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #fff;
+  box-shadow: var(--glow-orange-sm);
+  flex-shrink: 0;
+}
+
+.brand-name {
+  letter-spacing: -0.02em;
+}
+
+.brand-nova {
+  color: var(--text-primary);
+}
+
+.brand-digital {
+  color: var(--accent-orange);
+}
+
+/* ── 5. Shared Typography & Section Utilities ───────────── */
+.text-gradient {
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-py {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+.section-title {
+  font-size: var(--fs-3xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+
+.section-subtitle {
+  font-size: var(--fs-base);
+  color: var(--text-secondary);
+  /* max-width: 560px; */
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
+/* ── 6. Shared Component Primitives ─────────────────────── */
+.nd-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-base),
+              box-shadow var(--transition-base),
+              transform var(--transition-base);
+}
+
+.nd-card:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.btn-nd-primary {
+  background: var(--gradient-accent);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--fs-sm);
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: opacity var(--transition-base),
+              box-shadow var(--transition-base),
+              transform var(--transition-fast);
+  box-shadow: var(--glow-orange-sm);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-nd-primary:hover,
+.btn-nd-primary:focus {
+  opacity: 0.9;
+  box-shadow: var(--glow-orange);
+  transform: translateY(-1px);
+  color: #fff;
+}
+
+.btn-nd-outline {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: var(--fs-sm);
+  padding: 0.65rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-base),
+              color var(--transition-base);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-nd-outline:hover {
+  border-color: var(--accent-orange);
+  color: var(--text-primary);
+}
+
+/* Icon Badges */
+.icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.icon-badge-orange {
+  background: rgba(255, 90, 31, 0.15);
+  color: var(--accent-orange);
+}
+
+.icon-badge-yellow {
+  background: rgba(255, 170, 0, 0.15);
+  color: var(--accent-yellow);
+}
+
+.icon-badge-blue {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-blue);
+}
+
+.icon-badge-purple {
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--accent-purple);
+}
+
+.icon-badge-green {
+  background: rgba(16, 185, 129, 0.15);
+  color: var(--accent-green);
+}
+
+.nd-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255, 90, 31, 0.10);
+  border: 1px solid rgba(255, 90, 31, 0.25);
+  color: var(--accent-orange);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.nd-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--border-color) 20%,
+    var(--border-color) 80%,
+    transparent
+  );
+  border: none;
+  margin: 0;
+}
+
+.nd-bg-brown {
+  background: var(--accent-brown);
+}
+
+.nd-badge-brown {
+    background: var(--accent-brown);
+}
+
+.nd-badge-yellow-light {
+    background: var(--accent-yellow-light);
+}
+
+.nd-badge-blue {
+    background: var(--accent-blue);
+}
+
+.nd-text-orange {
+    color: var(--accent-orange);
+}
+
+/* ── 7. Scrollbar & Selection ───────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--border-accent); }
+
+::selection {
+  background: rgba(255, 90, 31, 0.3);
+  color: var(--text-primary);
+}
+
+/* ── 8. Responsive Typography & Spacing ─────────────────── */
+@media (max-width: 991.98px) {
+  :root {
+    --section-py: 4rem;
+    --fs-5xl: 2.5rem;
+    --fs-6xl: 3rem;
+  }
+  .section-title { font-size: var(--fs-2xl); }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --section-py: 3rem;
+    --fs-5xl: 2rem;
+    --fs-6xl: 2.5rem;
+  }
+  .section-title { font-size: var(--fs-xl); }
+  .section-subtitle { font-size: var(--fs-sm); }
+}

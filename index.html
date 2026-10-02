@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NovaDigital - Accelerate Growth with Intelligent SaaS" />
+  <link rel="icon" href="assets/images/favicon.png">
+  <title>NovaDigital - Intelligent SaaS</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg nd-navbar" id="mainNavbar" data-bs-theme="dark" role="navigation" aria-label="Main navigation">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-decoration-none" href="#hero">
+      <div class="brand-logo-icon" aria-hidden="true">N</div>
+      <span class="brand-name">
+        <span class="brand-nova">Nova</span><span class="brand-digital">Digital</span>
+      </span>
+    </a>
+
+    <!-- Mobile toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMain"
+      aria-controls="navbarMain"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav links -->
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item">
+          <a class="nav-link" href="#features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#calculator">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sectors">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimonials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#faq">FAQ</a>
+        </li>
+      </ul>
+
+      <!-- CTA group -->
+      <div class="nav-cta d-flex align-items-center gap-2">
+        <button class="btn-nav-login">Log in</button>
+        <button class="btn-nd-primary">Get Started &rarr;</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="nd-hero" id="hero" aria-label="Hero">
+  <div class="nd-hero__glow" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="d-flex justify-content-center mb-0">
+      <div class="hero-announce" role="note" aria-label="Announcement">
+        <span class="hero-announce__dot" aria-hidden="true"></span>
+        <span class="hero-announce__text">
+          <strong>Nova 3.0 is Live</strong> &mdash; Explore enterprise SaaS tools
+        </span>
+        <span class="hero-announce__arrow" aria-hidden="true">&#8594;</span>
+      </div>
+    </div>
+
+    <h1 class="hero-title mt-3 text-center">
+      <span class="hero-title__line1">Accelerate Growth with</span>
+      <span class="hero-title__line2 pb-1">Intelligent SaaS</span>
+    </h1>
+
+    <p class="hero-desc text-center">
+      Transform your digital presence and workflow automation. Empower
+      your team with real-time analytics, lightning-fast deployment, and
+      robust AI integrations.
+    </p>
+
+    <div class="hero-cta d-flex align-items-center justify-content-center gap-3 flex-wrap">
+      <a href="#calculator" class="btn-hero-primary">
+        Start 14-Day Free Trial &nbsp;&#8594;
+      </a>
+      <a href="#demo" class="btn-hero-secondary">
+        <span class="play-icon d-flex justify-content-center align-items-center" aria-hidden="true">&#9654;</span>
+        Watch Demo
+      </a>
+    </div>
+
+    <hr class="w-75 mx-auto" />
+
+    <div class="hero-stats d-flex align-items-center justify-content-center flex-wrap pt-5" aria-label="Key metrics">
+      <div class="hero-stat">
+        <div class="hero-stat__value">99.99%</div>
+        <div class="hero-stat__label">Uptime Guaranteed</div>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <div class="hero-stat__value">15K+</div>
+        <div class="hero-stat__label">Active Teams</div>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <div class="hero-stat__value">$2B+</div>
+        <div class="hero-stat__label">Revenue Processed</div>
+      </div>
+      <div class="hero-stat-divider" aria-hidden="true"></div>
+      <div class="hero-stat">
+        <div class="hero-stat__value">4.9/5</div>
+        <div class="hero-stat__label">Customer Rating</div>
+      </div>
+    </div>
+
+
+    <div class="hero-dashboard-wrap pb-5" aria-label="Analytics dashboard preview" role="img">
+      <div class="hero-dashboard">
+        <img src="assets/images/dashboard.png" class="img-fluid" alt="Nova Dashbaord"/>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="nd-features section-py" id="features" aria-label="Features">
+  <div class="container">
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <span class="calc-eyebrow">Powerful Capabilities</span>
+      <h2 class="section-title">Designed to scale with your<br />ambition</h2>
+      <p class="section-subtitle">
+        Everything you need to run, optimize and expand your digital enterprise seamlessly.
+      </p>
+    </div>
+
+    <!-- Feature grid -->
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card p-4 h-100">
+          <div class="feature-icon mb-3">
+            <div class="icon-badge icon-badge-orange"><i class="bi bi-bar-chart-line-fill"></i></div>
+          </div>
+          <h3 class="feature-title fw-semibold mb-2">Real-Time Analytics</h3>
+          <p class="feature-desc mb-0">Gain immediate clarity on traffic, conversion funnels, and performance metrics with lightning speed.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card p-4 h-100">
+          <div class="feature-icon mb-3">
+            <div class="icon-badge icon-badge-blue"><i class="bi bi-shield"></i></div>
+          </div>
+          <h3 class="feature-title fw-semibold mb-2">Enterprise Security</h3>
+          <p class="feature-desc mb-0">Bank-grade encryption and automated compliance protocols keep your sensitive business data entirely secure.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card p-4 h-100">
+          <div class="feature-icon mb-3">
+            <div class="icon-badge icon-badge-purple"><i class="bi bi-magic"></i></div>
+          </div>
+          <h3 class="feature-title fw-semibold mb-2">AI Automation</h3>
+          <p class="feature-desc mb-0">Let intelligent agents handle repetitive customer interactions, lead scoring, and scheduling tasks.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card p-4 h-100">
+          <div class="feature-icon mb-3">
+            <div class="icon-badge icon-badge-yellow"><i class="bi bi-diagram-2"></i></div>
+          </div>
+          <h3 class="feature-title fw-semibold mb-2">Seamless Integration</h3>
+          <p class="feature-desc mb-0">Connect instantly with over 200+ popular business tools including Slack, GitHub, HubSpot, and Stripe.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card p-4 h-100">
+          <div class="feature-icon mb-3">
+            <div class="icon-badge icon-badge-green"><i class="bi bi-cloud"></i></div>
+          </div>
+          <h3 class="feature-title fw-semibold mb-2">Instant Cloud Sync</h3>
+          <p class="feature-desc mb-0">Multi-region edge synchronization ensures zero latency for distributed teams across the globe.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="feature-card p-4 h-100">
+          <div class="feature-icon mb-3">
+            <div class="icon-badge icon-badge-orange"><i class="bi bi-headset"></i></div>
+          </div>
+          <h3 class="feature-title fw-semibold mb-2">24/7 Expert Support</h3>
+          <p class="feature-desc mb-0">Dedicated success managers and around-the-clock technical assistance ready whenever you need it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nd-calculator section-py" id="calculator" aria-label="Pricing calculator">
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <span class="calc-eyebrow">Flexible Pricing</span>
+      <h2 class="section-title">Calculate Your Investment</h2>
+      <p class="section-subtitle">Scale the sliders to fit your organization size and projected monthly active users.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-xl-9 col-lg-11">
+        <div class="calc-card">
+          <div class="row g-0">
+            <div class="col-lg-6 calc-left">
+              <!-- Users slider -->
+              <div class="calc-group">
+                <div class="calc-group__header d-flex justify-content-between align-items-center mb-2">
+                  <span class="calc-group__label">Team Members / Users</span>
+                  <span class="calc-group__value" id="users-display">25 users</span>
+                </div>
+                <input type="range" class="nd-range" id="calc-users"
+                       min="1" max="200" value="25" step="1"
+                       aria-label="Team members" />
+                <div class="calc-range-ticks d-flex justify-content-between mt-1">
+                  <span>1</span><span>100</span><span>200+</span>
+                </div>
+              </div>
+
+              <!-- Data volume slider -->
+              <div class="calc-group py-4">
+                <div class="calc-group__header d-flex justify-content-between align-items-center mb-2">
+                  <span class="calc-group__label">Monthly Data Volume (GB)</span>
+                  <span class="calc-group__value text-warning" id="data-display">150 GB</span>
+                </div>
+                <input type="range" class="nd-range nd-range--yellow" id="calc-data"
+                       min="10" max="3000" value="150" step="10"
+                       aria-label="Monthly data volume" />
+                <div class="calc-range-ticks d-flex justify-content-between mt-1">
+                  <span>10 GB</span><span>1,000 GB</span><span>3,000 GB</span>
+                </div>
+              </div>
+
+              <!-- Annual billing toggle -->
+              <div class="calc-toggle-row d-flex align-items-center justify-content-between">
+                <div>
+                  <div class="calc-toggle-label">Annual Billing</div>
+                  <div class="calc-toggle-sub text-success">Save 20% + 2 Months Free</div>
+                </div>
+                <div class="form-check form-switch mb-0">
+                  <input class="form-check-input calc-switch" type="checkbox"
+                         id="annual-toggle" role="switch" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 calc-right">
+              <div class="calc-summary">
+                <div class="calc-summary-card text-center border border-dark p-5">
+                    <p class="calc-plan-label badge nd-bg-brown text-white">Estimated Plan</p>
+                    <p class="calc-invest-label">Total Monthly Investment</p>
+                    <div class="calc-price-row align-items-center gap-1 py-2">
+                        <span class="calc-price" id="calc-price">$131</span>
+                        <span class="calc-price-mo">/mo</span>
+                    </div>
+                    <p class="calc-saving text-success text-center" id="calc-saving" style="visibility:hidden;">Saving $33/mo with annual billing</p>
+                    <hr/>
+                    <ul class="calc-features list-unstyled py-3">
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Full Analytics &amp; Reporting Suite</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Priority Cloud Synchronization</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> 24/7 Dedicated Support Channel</li>
+                        <li class="d-flex align-items-center gap-2"><i class="bi bi-check2"></i> Custom API Access &amp; Webhooks</li>
+                    </ul>
+                    <hr/>
+                    <button class="btn-calc-cta mt-4">Claim Custom Plan</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nd-sectors section-py" id="sectors" aria-label="Proven Success Across Sectors">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="calc-eyebrow">Case Studies</span>
+      <h2 class="section-title">Proven Success Across Sectors</h2>
+      <p class="section-subtitle">
+        Filter through our enterprise deployments and see how we empower modern leaders. 
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="sector-card h-100 d-flex flex-column variant-orange">
+          <div class="sector-icon d-flex align-items-center justify-content-center mb-3"><i class="bi bi-wallet-fill"></i></div>
+          <div class="sector-section p-4">
+            <div class="sector-tag text-white badge nd-badge-brown mb-3">Fintech</div>
+            <h3 class="sector-title fw-semibold mb-2">Apex Global Banking Suite</h3>
+            <p class="sector-desc mb-3 flex-grow-1">Automated transaction processing pipeline handling over 2M secure settlements daily with zero downtime.</p>
+            <a href="#" class="sector-link d-inline-flex align-items-center gap-1 text-decoration-none fw-semibold mt-auto">Read Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="sector-card h-100 d-flex flex-column variant-yellow">
+          <div class="sector-icon d-flex align-items-center justify-content-center mb-3"><i class="bi bi-bag-fill"></i></div>
+          <div class="sector-section p-4">
+            <div class="sector-tag text-white badge nd-badge-yellow-light mb-3">E-commerce</div>
+            <h3 class="sector-title fw-semibold mb-2">Vortex Retail Intelligence</h3>
+            <p class="sector-desc mb-3 flex-grow-1">Predictive inventory restocking and personalized recommendation engines boosting checkout conversion by 34%.</p>
+            <a href="#" class="sector-link d-inline-flex align-items-center gap-1 text-decoration-none fw-semibold mt-auto">Read Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="sector-card h-100 d-flex flex-column variant-blue">
+          <div class="sector-icon d-flex align-items-center justify-content-center mb-3"><i class="bi bi-cpu-fill"></i></div>
+          <div class="sector-section p-4">
+            <div class="sector-tag text-white badge nd-badge-blue mb-3">AI & Cloud</div>
+            <h3 class="sector-title fw-semibold mb-2">Nexus Neural Cloud Core</h3>
+            <p class="sector-desc mb-3 flex-grow-1">Distributed LLM inference framework reducing query response times across enterprise customer service bots.</p>
+            <a href="#" class="sector-link d-inline-flex align-items-center gap-1 text-decoration-none fw-semibold mt-auto">Read Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="sector-card h-100 d-flex flex-column variant-orange">
+          <div class="sector-icon d-flex align-items-center justify-content-center mb-3"><i class="bi bi-pie-chart-fill"></i></div>
+          <div class="sector-section p-4">
+            <div class="sector-tag text-white badge nd-badge-brown mb-3">Fintech</div>
+            <h3 class="sector-title fw-semibold mb-2">Stellar Wealth Metrics</h3>
+            <p class="sector-desc mb-3 flex-grow-1">Portfolio management dashboard offering real-time risk simulation and automated tax-loss harvesting.</p>
+            <a href="#" class="sector-link d-inline-flex align-items-center gap-1 text-decoration-none fw-semibold mt-auto">Read Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="sector-card h-100 d-flex flex-column variant-yellow">
+          <div class="sector-icon d-flex align-items-center justify-content-center mb-3"><i class="bi bi-truck"></i></div>
+          <div class="sector-section p-4">
+            <div class="sector-tag text-white badge nd-badge-yellow-light mb-3">E-commerce</div>
+            <h3 class="sector-title fw-semibold mb-2">OmniLogistics Sync</h3>
+            <p class="sector-desc mb-3 flex-grow-1">Multi-warehouse inventory routing engine ensuring 2-day delivery guarantees for 500k+ global SKUs.</p>
+            <a href="#" class="sector-link d-inline-flex align-items-center gap-1 text-decoration-none fw-semibold mt-auto">Read Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="sector-card h-100 d-flex flex-column variant-blue">
+          <div class="sector-icon d-flex align-items-center justify-content-center mb-3"><i class="bi bi-collection-fill"></i></div>
+          <div class="sector-section p-4">
+            <div class="sector-tag text-white badge nd-badge-blue mb-3">AI & Cloud</div>
+            <h3 class="sector-title fw-semibold mb-2">Cortex Cognitive Ops</h3>
+            <p class="sector-desc mb-3 flex-grow-1">Autonomous DevOps incident response tool reducing mean-time-to-resolution by 78% for cloud clusters.</p>
+            <a href="#" class="sector-link d-inline-flex align-items-center gap-1 text-decoration-none fw-semibold mt-auto">Read Case Study <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nd-testimonials section-py" id="testimonials" aria-label="Testimonials">
+  <div class="container position-relative" style="z-index:1">
+    <div class="text-center mb-5">
+      <span class="calc-eyebrow">Customer Praise</span>
+      <h2 class="section-title">Loved by Industry Leaders</h2>
+      <p class="section-subtitle">
+        Discover how Nova Digital transformed workflows for high-growth enterprises.
+      </p>
+    </div>
+
+    <!-- Single card testimonial (carousel) -->
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="testimonial-card">
+          <div class="testimonial-slide">
+            <div class="star-row d-flex gap-1 mb-3" aria-label="5 star rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              &ldquo;NovaDigital completely transformed the way we handle our paid media. The platform gave us cross-channel clarity we&#8217;d never had before. Our acquisition costs dropped by 34% in the first quarter alone &mdash; simply incredible.&rdquo;
+            </p>
+            <div class="testimonial-author d-flex align-items-center gap-3">
+              <div class="author-avatar d-flex align-items-center justify-content-center fw-bold flex-shrink-0">SR</div>
+              <div>
+                <div class="author-name">Sarah Reynolds</div>
+                <div class="author-role">VP Marketing &middot; TechNova Inc.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide" style="display:none">
+            <div class="star-row d-flex gap-1 mb-3" aria-label="5 star rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+            </div>
+            <p class="testimonial-text">
+              &ldquo;The AI automation alone saved our team 20 hours per week. We now launch campaigns in minutes instead of days and our ROAS has never looked better. NovaDigital is the platform we wish we&#8217;d found years ago.&rdquo;
+            </p>
+            <div class="testimonial-author d-flex align-items-center gap-3">
+              <div class="author-avatar d-flex align-items-center justify-content-center fw-bold flex-shrink-0">ML</div>
+              <div>
+                <div class="author-name">Marcus Liu</div>
+                <div class="author-role">Growth Lead &middot; FinFlow</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide" style="display:none">
+            <div class="star-row d-flex gap-1 mb-3" aria-label="5 star rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </div>
+            <p class="testimonial-text">
+              &ldquo;From the onboarding to the real-time dashboards, the experience is flawless. The compliance features gave our legal team peace of mind while enabling marketing to move faster than ever before.&rdquo;
+            </p>
+            <div class="testimonial-author d-flex align-items-center gap-3">
+              <div class="author-avatar d-flex align-items-center justify-content-center fw-bold flex-shrink-0">AK</div>
+              <div>
+                <div class="author-name">Anjali Kapoor</div>
+                <div class="author-role">Chief Digital Officer &middot; HealthBridge</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="d-flex justify-content-end mt-3">
+            <div class="testimonial-nav d-flex gap-2">
+              <button class="nav-btn prev" aria-label="Previous testimonial">
+                <i class="bi bi-arrow-left"></i>
+              </button>
+              <button class="nav-btn next" aria-label="Next testimonial">
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="nd-faq section-py" id="faq" aria-label="Frequently Asked Questions">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">
+        Everything you need to know about getting started with NovaDigital.
+      </p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1-heading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                Can I switch plans at any time?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Yes, you can upgrade or downgrade your plan at any time from the settings page. Changes take effect immediately and you will only be charged the prorated difference for the remainder of the billing cycle.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                Is there a free trial available?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Absolutely. Every plan comes with a 14-day free trial, no credit card required. You get full access to all features of your chosen plan so you can evaluate NovaDigital without any commitment.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                How do integrations work?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                NovaDigital connects natively with 150+ platforms including Google Ads, Meta, HubSpot, Salesforce, Shopify, and more. Each integration takes minutes to configure through our guided setup wizard and requires no technical expertise.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                What does the enterprise plan include?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                The Enterprise plan includes unlimited team members, dedicated infrastructure, white-label options, a dedicated account manager, 24/7 priority support, a guaranteed SLA, and optional on-premise deployment for regulated industries.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5-heading">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                How is data stored and secured?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-heading" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We are SOC 2 Type II certified, GDPR compliant, and your data is stored in your chosen region. We never share or sell customer data.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="nd-footer" id="footer" aria-label="Site footer">
+  <div class="container">
+    <div class="row g-4">
+      <!-- Brand column -->
+      <div class="col-lg-4 col-md-6">
+        <a class="footer-brand d-flex align-items-center gap-2 fw-bold text-decoration-none mb-3" href="#hero">
+          <div class="brand-logo-icon" aria-hidden="true">N</div>
+          <span><span style="color:var(--text-primary)">Nova</span><span style="color:var(--accent-orange)">Digital</span></span>
+        </a>
+        <p class="footer-tagline">
+          The intelligent SaaS platform that helps growth teams accelerate revenue at every stage of the funnel.
+        </p>
+        <div class="social-links d-flex gap-2" aria-label="Social media links">
+          <a href="#" class="social-link d-flex align-items-center justify-content-center text-decoration-none" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="social-link d-flex align-items-center justify-content-center text-decoration-none" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-link d-flex align-items-center justify-content-center text-decoration-none" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-link d-flex align-items-center justify-content-center text-decoration-none" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="col-lg-3 col-md-3 col-6">
+        <div class="footer-col-title">Product</div>
+        <ul class="footer-links list-unstyled mb-0">
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing Calculator</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </div>
+
+        <!-- Resources -->
+      <div class="col-lg-3 col-md-3 col-6">
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-links list-unstyled mb-0">
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">API Reference</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-links list-unstyled mb-0">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Carrers <span class="badge nd-badge-brown">We're Hiring</span></a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Services</a></li>
+        </ul>
+      </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom d-flex align-items-center justify-content-between flex-wrap gap-2 mt-4 pt-3 pb-3">
+      <span class="footer-copy">&copy; 2026 NovaDigital. All rights reserved.</span>
+      <div class="footer-legal-links d-flex gap-3">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
